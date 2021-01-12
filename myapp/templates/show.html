@@ -1,0 +1,18 @@
+<table>
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Contact</td>
+    </tr>
+    {% for i in employee %}
+    <tr>
+        <td>{{ i.eid }}</td>
+        <td>{{ i.ename }}</td>
+        <td>{{ i.eemail }}</td>
+        <td>{{ i.econtact }}</td>
+        <td><a href="edit/{{i.id}}">Edit</a> </td>
+         <td><a href="delete/{{i.id}}">Delete</a> </td>
+    </tr>
+    {% endfor %}
+</table>

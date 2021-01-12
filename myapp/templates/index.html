@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <form method="post" action="add">
+        {% csrf_token %}
+        <table border="1" cellspacing="0" cellpadding="10" align="center">
+                <tr>
+                    <td>ID:</td>
+                    <td>{{ form.eid }}</td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td>{{ form.ename }}</td>
+                </tr>
+                 <tr>
+                    <td>Email:</td>
+                    <td>{{ form.eemail }}</td>
+                </tr>
+                <tr>
+                    <td>Contact:</td>
+                    <td>{{ form.econtact }}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" name="submit"></td>
+                </tr>
+        </table>
+
+    </form>
+</body>
+</html>
